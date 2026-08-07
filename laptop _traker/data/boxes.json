@@ -1,0 +1,8 @@
+{
+  "start_frame": 155,
+  "boxes": {
+    "laptop":   {"class": "laptop", "xyxy": [439, 269, 534, 319]},
+    "person_A": {"class": "person", "xyxy": [387, 57, 547, 516]},
+    "person_B": {"class": "person", "xyxy": [315, 114, 505, 623]}
+  }
+}
