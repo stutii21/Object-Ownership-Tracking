@@ -1,0 +1,4 @@
+frame_idx,timestamp_sec,laptop_id,previous_owner,new_owner,confidence,event_type
+155,5.163,1000,,Seat_D,0.928,init
+345,11.492,1000,Seat_D,Seat_C,0.670,handover
+367,12.224,1000,Seat_C,Seat_B,0.717,handover

@@ -1,0 +1,67 @@
+{
+  "input_video": "/mnt/user-data/uploads/video_slow.mp4",
+  "video_properties": {
+    "width": 720,
+    "height": 810,
+    "fps": 30.02,
+    "total_frames": 595,
+    "duration_sec": 19.82
+  },
+  "detector_backend": "yolo",
+  "detector_model": "yolo11m.pt",
+  "confidence_threshold": 0.15,
+  "performance": {
+    "frames_processed": 595,
+    "total_wall_time_sec": 223.7,
+    "avg_inference_time_ms": 368.8,
+    "throughput_fps": 2.66
+  },
+  "person_detection": {
+    "unique_track_ids_seen": 10,
+    "avg_people_per_frame": 6.34,
+    "max_people_in_single_frame": 9,
+    "confidence_stats": {
+      "count": 3775,
+      "mean": 0.627,
+      "min": 0.151,
+      "max": 0.942,
+      "median": 0.69
+    }
+  },
+  "laptop_detection": {
+    "unique_raw_track_ids_seen": 1,
+    "note": "raw ids include track resets from occlusion/low-conf gaps; SINGLE_OBJECT_MODE collapses these to one canonical object downstream",
+    "frames_with_laptop_detected": 61,
+    "pct_frames_with_laptop": 10.3,
+    "confidence_stats": {
+      "count": 61,
+      "mean": 0.422,
+      "min": 0.152,
+      "max": 0.79,
+      "median": 0.373
+    }
+  },
+  "ownership_assignment": {
+    "confirmed_events": [
+      {
+        "frame": 155,
+        "t_sec": 5.16,
+        "laptop_id": 9,
+        "previous_owner": null,
+        "new_owner": 1,
+        "confidence": 0.465,
+        "type": "init"
+      }
+    ],
+    "num_confirmed_events": 1
+  },
+  "config_used": {
+    "W_DIST": 0.5,
+    "W_IOU": 0.3,
+    "W_TEMP": 0.2,
+    "MIN_OWNERSHIP_SCORE": 0.15,
+    "HANDOVER_CONFIRMATION_FRAMES": 15,
+    "SINGLE_OBJECT_MODE": true,
+    "LOST_TRACK_BUFFER": 90
+  }
+}
