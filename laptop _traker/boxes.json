@@ -1,0 +1,5 @@
+{
+  "person_A": {"frame": 0,   "class": "person", "xyxy": [394, 52, 541, 513]},
+  "person_B": {"frame": 0,   "class": "person", "xyxy": [317, 142, 509, 628]},
+  "laptop":   {"frame": 155, "class": "laptop", "xyxy": [439, 269, 534, 319]}
+}
